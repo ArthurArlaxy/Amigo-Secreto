@@ -3,7 +3,7 @@ let listaDeAmigos = []
 function textoFinal(texto){
         let textoFinal = document.getElementById('resultado');
         textoFinal.innerHTML = texto;
-}
+};
 
 function adicionarAmigo(){
     let nome = document.querySelector('input').value;
@@ -17,9 +17,9 @@ function adicionarAmigo(){
         let item =  document.createElement('li');
         item.innerHTML = nome;
         listagem.append(item);
-        textoFinal('')
-    }
-}
+        textoFinal('');
+    };
+};
 
 function escolhaDeAmigo(){
     if (listaDeAmigos != '') {
@@ -28,9 +28,9 @@ function escolhaDeAmigo(){
         let listagem = document.querySelector('ul');
         listagem.innerHTML = '';
         textoFinal(`O seu amigo secreto é ${amigoSecreto}`)
-        listaDeAmigos = []
+        listaDeAmigos = [];
     } else {
-        alert('Falta inserir os amigos')
+        alert('Falta inserir os amigos');
     };
 };
 
